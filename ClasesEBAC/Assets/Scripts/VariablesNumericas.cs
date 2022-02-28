@@ -5,22 +5,12 @@ using UnityEngine;
 public class VariablesNumericas : MonoBehaviour
 {
     //Primeras dos variables
-<<<<<<< Updated upstream
-    
     public long incrementoUpdate;
-    
-=======
-    public long incrementoUpdate;
->>>>>>> Stashed changes
     public double incrementoFixed;
     //Variables para operación y casteo
     float a, b;
     int c;
     //Variable para cambio de color
-<<<<<<< Updated upstream
-   
-=======
->>>>>>> Stashed changes
     public int numeroSecreto;
 
     
