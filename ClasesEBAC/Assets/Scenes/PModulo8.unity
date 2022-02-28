@@ -378,7 +378,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1527637385}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fad3d84b6a98c143899778f7cc59d46, type: 3}
+  m_Script: {fileID: 11500000, guid: 8485794a0a7c1c94a8d57fd93f79c84a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   colores: []
@@ -488,7 +488,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1806700288}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd676ed1ebfe43a42bd21632984b0a30, type: 3}
+  m_Script: {fileID: 11500000, guid: 3ff55759442f43e45a281e10ccf59629, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   incrementoUpdate: 0
