@@ -4,28 +4,20 @@ using UnityEngine;
 
 public class CubeTWO : MonoBehaviour
 {
-    public bool miColor;
-    [SerializeField]
-    int asignaValor;
-
-    void Start()
-    {
-        asignaValor = Random.Range(0, 5);
-    }
+    public bool miColor2;
 
     private void FixedUpdate()
     {
-        if (asignaValor >= 3)
+        int rango = Random.Range(0, 6);
+        if (rango<=3)
         {
-            miColor = true;
+            miColor2 = true;
             gameObject.GetComponent<MeshRenderer>().material.color = Color.white;
-            Debug.Log("Cubo 2 verdadero");
         }
         else
         {
-            miColor = false;
+            miColor2 = false;
             gameObject.GetComponent<MeshRenderer>().material.color = Color.black;
-            Debug.Log("Cubo 2 falso");
         }
     }
 }

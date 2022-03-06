@@ -4,29 +4,30 @@ using UnityEngine;
 
 public class CubeTHREE : MonoBehaviour
 {
-    CubeONE cubo1;
-    CubeTWO cubo2;
+    GameObject cube1;
+    GameObject cube2;
+    public bool micubo3;
 
    
 
     void Start()
     {
-        cubo1 = FindObjectOfType<CubeONE>();
-        cubo2 = FindObjectOfType<CubeTWO>();
-        
+        cube1 = GameObject.Find("Cube1");
+        cube2 = GameObject.Find("Cube2");
+
     }
 
     private void FixedUpdate()
     {
-       if(cubo1.miColor==true && cubo2.miColor == true)
+       if(cube1.GetComponent<CubeONE>().miColor && cube2.GetComponent<CubeTWO>().miColor2)
         {
-            
+            micubo3 = true;
             gameObject.GetComponent<MeshRenderer>().material.color = Color.green;
             Debug.Log("Los cubos 1 y 2 son verdaderos");
         }
         else
         {
-            
+            micubo3 = false;
             gameObject.GetComponent<MeshRenderer>().material.color = Color.red;
             Debug.Log("Los cubos 1 y 2 son falsos");
         }

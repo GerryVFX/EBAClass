@@ -5,27 +5,20 @@ using UnityEngine;
 public class CubeONE : MonoBehaviour
 {
     public bool miColor;
-    [SerializeField]
-    int asignaValor;
+  
 
-    void Start()
-    {      
-        asignaValor = Random.Range(0, 5);
-    }
 
     private void FixedUpdate()
     {
-        if (asignaValor >= 3)
+        if (!miColor)
         {
             miColor = true;
             gameObject.GetComponent<MeshRenderer>().material.color = Color.white;
-            Debug.Log("CUbo 1 verdadero");
         }
-        else 
+        else
         {
             miColor = false;
             gameObject.GetComponent<MeshRenderer>().material.color = Color.black;
-            Debug.Log("CUbo 1 falso");
         }
     }
 }
