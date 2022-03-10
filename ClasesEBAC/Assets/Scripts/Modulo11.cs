@@ -70,42 +70,30 @@ public class Modulo11 : MonoBehaviour
 
     public void FuncionPila()
     {
+        
         pilaString.Push("ELemento1");
         pilaString.Push("ELemento2");
         pilaString.Push("ELemento3");
         pilaString.Push("ELemento4");
         pilaString.Push("ELemento5");
+        pilaString.Push("ELemento6");
 
         print("Esto es de la pila");
 
-        print(pilaString.Peek());
-        colaString.Enqueue(pilaString.Peek());
-        pilaString.Pop();
-        print(pilaString.Peek());
-        colaString.Enqueue(pilaString.Peek());
-        pilaString.Pop();
-        print(pilaString.Peek());
-        colaString.Enqueue(pilaString.Peek());
-        pilaString.Pop();
-        print(pilaString.Peek());
-        colaString.Enqueue(pilaString.Peek());
-        pilaString.Pop();
-        print(pilaString.Peek());
-        colaString.Enqueue(pilaString.Peek());
-        pilaString.Pop();
+       while(pilaString.Count>0)
+         {
+            print(pilaString.Peek());
+            colaString.Enqueue(pilaString.Peek());
+            pilaString.Pop();
+        }
 
         print("Esto es de la cola");
 
-        print(colaString.Peek());
-        colaString.Dequeue();
-        print(colaString.Peek());
-        colaString.Dequeue();
-        print(colaString.Peek());
-        colaString.Dequeue();
-        print(colaString.Peek());
-        colaString.Dequeue();
-        print(colaString.Peek());
-        colaString.Dequeue();
+        while(colaString.Count>0)
+        {
+            print(colaString.Peek());
+            colaString.Dequeue();
+        }
     }
 
 }
